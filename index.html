@@ -1,37 +1,43 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>lz-Memory Game</title>
-  <link rel="stylesheet" href="style.css"></link>
-  <script src="app.js" charset="utf-8"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="dictionary.css">
 </head>
 
-<!--<header>
-  <button>აღწერა</button>
-  <button>******</button>
-  <button>******</button>
-  <button>თამაში</button>
-  <button>გამოცანა</button>
-  <button>შემდეგი ეტაპი</button>
-  <button>კონტაქტი</button>
-  <div class="menu_button">აღწერა</div>
-  <div class="menu_button">*******</div>
-  <div class="menu_button">*******</div>
-  <div class="menu_button">თამაში</div>
-  <div class="menu_button">გამოცანა</div>
-  <div class="menu_button">შემდეგი ეტაპი</div>
-  <div class="menu_button">კონტაქტი</div>
-</header>-->
 <body>
-  <div class="game">
-    <div class="score">
-      <h3>ქულა/ცდა = შედეგი:      <span id="points"></h3>
-      
-    </div>
 
-    <div class="grid" id="shuffled"></div>
-    <div class="dict" id="sorted"></div>
+  <div class="container">
+    <header>
+      <div class="btn menu-btn" onclick="openNav()">
+        <div class="menu-stripe"></div>
+        <div class="menu-stripe"></div>
+        <div class="menu-stripe"></div>
+      </div>
+
+      <div id="dict-score">
+        <h3><span id="points"></h3>
+        
+      </div>
+      <button class="restart-button">თავიდან</button>
+      <button class="start-button">დაწყება</button>
+    </header>
+    <nav id="mySidenav" class="sidenav w-100">
+      <a class="btn" href="../index.html">მთავარი</a>
+      <a class="btn" href="">ბლოგი</a>
+      <a class="btn" href="#">შესახებ</a>
+      <a class="btn" href="#">კონტაქტი</a>
+    </nav>
+    <div class="shuffled" id="gameBoard"></div>
+    <div class="sorted" id="dictBoard"></div>
   </div>
+  <script src="app.js"></script>
+  <script src="header.js"></script>
 </body>
+
 </html>
